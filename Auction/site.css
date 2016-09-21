@@ -46,7 +46,8 @@ hr {
 }
 
 .buttonCell {
-    text-align: center;
+    text-align: right;
+	padding-right: 2em;
 }
 
 .openStatus {
@@ -64,8 +65,10 @@ hr {
     border: solid thin;
     border-radius: 8px;
     background-color: rgb(0, 45, 179);
+	padding-left: 2em;
 }
 
 .eventTitle{
     font-size: 3em;
+	text-align: left;
 }
