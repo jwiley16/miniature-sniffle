@@ -12,7 +12,7 @@ body {
 }
 
 #title {
-    color: white;
+    color: black;
     font-weight: lighter;
     font-size: 80px;
     margin: auto;
@@ -64,7 +64,7 @@ hr {
     margin-bottom: 30px;
     border: solid thin;
     border-radius: 8px;
-    background-color: rgb(0, 45, 179);
+    background-color: rgb(191, 128, 64);
 	padding-left: 2em;
 }
 
