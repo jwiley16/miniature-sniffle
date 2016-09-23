@@ -1,4 +1,5 @@
 <?php
+include( 'Home.html' );
 $isempty = false;
 
 $conn = new mysqli("localhost", "root", "NCAPSSQLison#1", "mydb");
@@ -22,7 +23,7 @@ if ($isempty == false && $conn->query($sql) === TRUE) {
     echo "New record created successfully <br>";
 } else {
 	echo "Did you type anything?<br>";
-    echo "Error: " . $sql . "<br>" . $conn->error . "<br>";
+    //echo "Error: " . $sql . "<br>" . $conn->error . "<br>";
 }
 
 
