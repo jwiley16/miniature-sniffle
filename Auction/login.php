@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 
 //Check if they typed anything 
-if ($_POST['fname'] === '' || $_POST['lname'] === '') {
+if (trim($_POST['fname']) === '' || trim($_POST['lname']) === '') {
 	$isempty = true;
 }
 
