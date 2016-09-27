@@ -8,7 +8,6 @@ body {
 		background-color: black;
 		background-size: 100% 100%;
 		font-size: 20px;
-		font-weight: 
 }
 #title	{
 		color: white;
@@ -42,6 +41,10 @@ button:hover {
 		margin: 4px 2px;
 		cursor: pointer;
 	}
+input {
+		border-radius: 10px; 
+		border: none;
+	}
 	
 @media only screen and (max-device-width: 480px) {
 	body {
@@ -51,7 +54,7 @@ button:hover {
     	margin: auto;
     	padding-top: 20px;
 		text-align: center;
-		background-color: #0066ff;
+		background-color: black;
 		font-size: 20px;
 		font-weight: 
 	}
@@ -85,5 +88,9 @@ button:hover {
 		font-size: 20px;
 		margin: 4px 2px;
 		cursor: pointer;
+	}
+	input {
+		border-radius: 10px; 
+		border: none;
 	}
 }
