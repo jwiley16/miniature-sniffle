@@ -4,20 +4,31 @@ $isempty = false;
 
 $conn = new mysqli("localhost", "root", "NCAPSSQLison#1", "mydb");
 
-
 //Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$sql = "SELECT pic FROM Image WHERE fName='2'";
+$result = $conn->query($sql);
+$row = mysqli_fetch_array($result);
+echo $row['pic'];
+/*
+$db = mysqli_connect("localhost","root","NCAPSSQLison#1","mydb");
+$sql = "SELECT * FROM products WHERE id = '1'";
+$sth = $db->query($sql);
+
+$result = mysqli_fetch_array($sth);
+echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['image'] ).'"/>';
+*/
 //Check if they typed anything 
 if (trim($_POST['fname']) === '' || trim($_POST['lname']) === '') {
 	$isempty = true;
 }
 
 //Insert form from Home.html
-$sql = "INSERT INTO Persons (fName, lName)
-VALUES ('$_POST[fname]','$_POST[lname]')";
+$sql = "INSERT INTO Image (fName, lName, pic)
+VALUES ('$_POST[fname]','$_POST[lname]','$_FILES[picture]')";
 
 if ($isempty == false && $conn->query($sql) === TRUE) {
     echo "New record created successfully <br>";
@@ -38,34 +49,6 @@ if ($result->num_rows > 0) {
     }
 } else {
     echo "0 results";
-}
-
-echo '<br>';
-$target_dir = "pictures/";
-$target_file = $target_dir . basename($_FILES["picture"]["name"]);
-$uploadOk = 1;
-$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-// Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["picture"]["name"]);
-    if($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
-}
-
-if ($uploadOk == 0) {
-    echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
-} else {
-    if (move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file)) {
-        echo "The file ". basename( $_FILES["picture"]["name"]). " has been uploaded.";
-    } else {
-        echo "Sorry, there was an error uploading your file.";
-    }
 }
 
 $conn->close();
