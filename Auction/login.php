@@ -25,20 +25,14 @@ if (filesize($_FILES['picture']['tmp_name']) == 0) {
     }
 }
 
-$sql = "INSERT INTO Persons (User, Pass)
-VALUES ('$_POST[User]','$_POST[Pass]')";
+$sql = "SELECT FROM userList WHERE fName = $_POST[fName] AND email = $_POST[User] AND pass = $_POST[Pass]"
 
-if (trim($_POST['User']) === '' || trim($_POST['Pass']) === '') {
-	$isempty = true;
+if (!$conn->query($sql)) {
+	echo "only nerds don't know their own password";
 }
-
-if ($isempty == false && $conn->query($sql) === TRUE) {
-    echo "New record created successfully <br>";
-} else {
-	echo "Did you type anything?<br>";
-    //echo "Error: " . $sql . "<br>" . $conn->error . "<br>";
+else {
+	echo "you're good my g";
 }
-
 
 //Display
 $sql = "SELECT User, Pass FROM Persons";
