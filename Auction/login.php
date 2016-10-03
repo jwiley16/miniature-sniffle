@@ -25,10 +25,10 @@ if (filesize($_FILES['picture']['tmp_name']) == 0) {
     }
 }
 
-$sql = "INSERT INTO Persons (fName, lName)
-VALUES ('$_POST[fname]','$_POST[lname]')";
+$sql = "INSERT INTO Persons (User, Pass)
+VALUES ('$_POST[User]','$_POST[Pass]')";
 
-if (trim($_POST['fname']) === '' || trim($_POST['lname']) === '') {
+if (trim($_POST['User']) === '' || trim($_POST['Pass']) === '') {
 	$isempty = true;
 }
 
@@ -41,13 +41,13 @@ if ($isempty == false && $conn->query($sql) === TRUE) {
 
 
 //Display
-$sql = "SELECT fName, lName FROM Persons";
+$sql = "SELECT User, Pass FROM Persons";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "Name: " . $row["fName"]. " " . $row["lName"] . "<br>";
+        echo "Name: " . $row["User"]. " " . $row["Pass"] . "<br>";
     }
 } else {
     echo "0 results";
