@@ -25,23 +25,23 @@ if (filesize($_FILES['picture']['tmp_name']) == 0) {
     }
 }
 
-$sql = "SELECT FROM userList WHERE fName = $_POST[fName] AND email = $_POST[User] AND pass = $_POST[Pass]"
+$sql = "SELECT * FROM userList WHERE email = '$_POST[User]' AND pass = '$_POST[Pass]'";
 
 if (!$conn->query($sql)) {
-	echo "only nerds don't know their own password";
+	echo "only nerds don't know their own password<br>";
 }
 else {
-	echo "you're good my g";
+	echo "you're good my g<br>";
 }
 
 //Display
-$sql = "SELECT User, Pass FROM Persons";
+$sql = "SELECT email, pass FROM userList";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "Name: " . $row["User"]. " " . $row["Pass"] . "<br>";
+        echo "Name: " . $row["email"]. " " . $row["pass"] . "<br>";
     }
 } else {
     echo "0 results";
