@@ -27,17 +27,17 @@ if (filesize($_FILES['picture']['tmp_name']) == 0) {
 
 $sql = "SELECT * FROM userList WHERE email = '$_POST[User]' AND pass = '$_POST[Pass]'";
 
-if (!$conn->query($sql)) {
-	echo "only nerds don't know their own password<br>";
+if (mysqli_num_rows($conn->query($sql)) == 0) {
+	echo "bro don't even play. Can't break into this system.<br>";
 }
 else {
-	echo "you're good my g<br>";
+	echo "you're good my g. Logged in succesfully<br>";
 }
 
 //Display
 $sql = "SELECT email, pass FROM userList";
 $result = $conn->query($sql);
-
+/*
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -47,6 +47,6 @@ if ($result->num_rows > 0) {
     echo "0 results";
 }
 include('display.php');
-
+*/
 $conn->close();
 ?>
