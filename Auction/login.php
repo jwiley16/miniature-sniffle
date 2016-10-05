@@ -8,7 +8,7 @@ $conn = new mysqli("localhost", "root", "NCAPSSQLison#1", "mydb");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
+/*
 $send = mysqli_query($conn, "SELECT * FROM Image");
 $num_rows = mysqli_num_rows($send);
 $num_rows++;
@@ -24,7 +24,7 @@ if (filesize($_FILES['picture']['tmp_name']) == 0) {
     	echo "Something went wrong! :("; 
     }
 }
-
+*/
 $sql = "SELECT * FROM userList WHERE email = '$_POST[User]' AND pass = '$_POST[Pass]'";
 
 if (mysqli_num_rows($conn->query($sql)) == 0) {
