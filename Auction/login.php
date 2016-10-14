@@ -25,19 +25,30 @@ if (filesize($_FILES['picture']['tmp_name']) == 0) {
     }
 }
 */
+
+//Verify they are in the list
 $sql = "SELECT * FROM userList WHERE email = '$_POST[User]' AND pass = '$_POST[Pass]'";
 
 if (mysqli_num_rows($conn->query($sql)) == 0) {
-	echo "bro don't even play. Can't break into this system.<br>";
+	echo "Incorrect Login.<br>";
 }
 else {
-	echo "you're good my g. Logged in succesfully<br>";
+	echo "Logged in successfully.<br>";
+}
+
+//Check for Admin
+$sql = "SELECT * FROM Admin WHERE user = '$_POST[User]'";
+
+if (!mysqli_num_rows($conn->query($sql)) == 0) {
+	echo "Logged in successfully.<br>";
+	header("Location: Admin.html");
 }
 
 //Display
+/*
 $sql = "SELECT email, pass FROM userList";
 $result = $conn->query($sql);
-/*
+
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
