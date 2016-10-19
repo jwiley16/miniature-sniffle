@@ -34,16 +34,14 @@ if (mysqli_num_rows($conn->query($sql)) == 0) {
 }
 else {
 	echo "Logged in successfully.<br>";
+	//header("Location: Event.php");
+	$sql = "SELECT * FROM userList WHERE email = '$_POST[User]' AND admin =1";
+
+	if (!mysqli_num_rows($conn->query($sql)) == 0) {
+		echo "Logged in successfully.<br>";
+		header("Location: Admin.html");
+	}
 }
-
-//Check for Admin
-$sql = "SELECT * FROM Admin WHERE user = '$_POST[User]'";
-
-if (!mysqli_num_rows($conn->query($sql)) == 0) {
-	echo "Logged in successfully.<br>";
-	header("Location: Admin.html");
-}
-
 //Display
 /*
 $sql = "SELECT email, pass FROM userList";

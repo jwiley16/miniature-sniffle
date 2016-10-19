@@ -8,15 +8,14 @@
     	<p id="Title">
 			Admin Page
 		</p>
-			<div style="background-color: white; padding: 20px; padding-bottom: 1px; width: 20%; margin: auto;">
+			<div id="formdiv">
 			<form action="admin.php" method="post" id="admin" enctype="multipart/form-data">
 				<input type="text" name="name" placeholder="Event Name">
+					<div style="float: left; width 30%; line-height: 10px;"><p>Start time</p></div><div style="float: left; width: 70%; padding-top: 10px;"><input type="time" name="timeStart"></div>
 				<br>
-				<input type="time" name="timeStart">
+				<p>Ending time</p><input type="time" name="timeEnd">
 				<br>
-				<input type="time" name="timeEnd">
-				<br>
-				<input type="date" name="date" placeholder="Date">
+				<p>Date</p><input type="date" name="date" placeholder="Date">
 				<br>
 				<input type="number" name="fee" placeholder="Fee">
 				<br>

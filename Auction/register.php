@@ -9,8 +9,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO userList (fName, email, pass)
-VALUES ('$_POST[fName]','$_POST[User]','$_POST[Pass]')";
+$admin = 0;
+
+$sql = "INSERT INTO userList (fName, email, pass, admin)
+VALUES ('$_POST[fName]','$_POST[User]','$_POST[Pass]','$admin')";
 
 if (trim($_POST['fName']) === '' || trim($_POST['User']) === '' || trim($_POST['Pass']) === '') {
 	$isempty = true;
