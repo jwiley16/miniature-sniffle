@@ -5,7 +5,7 @@ body {
     	margin: auto;
     	padding-top: 70px;
 		text-align: center;
-		background-color: #0066ff;
+		background-color: black;
 		background-size: 100% 100%;
 		font-size: 20px;
 		font-weight: 
@@ -16,6 +16,7 @@ body {
 		font-size: 80px;
 		margin: auto;
 		padding-bottom: 25px;
+		padding-top: 60px;
 	}
 button {
 		opacity: 1;
