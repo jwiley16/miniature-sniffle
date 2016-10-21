@@ -1,14 +1,28 @@
 body {
     font-family: Helvetica, Sans-Serif;
-    color: white;
+    color: black;
     width: 75%;
     margin: auto;
     padding-top: 70px;
     text-align: center;
-    background-color: #0066ff;
+    background-color: rgb(135, 0, 25);
     background-size: 100% 100%;
     font-size: 20px;
     font-weight: lighter;
+}
+
+.the_border {
+	border: 2px solid;
+    padding: 10px;
+    background: white;
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	border-top-width: 15px;
+	border-left-width: 15px;
+	border-right-width: 15px;
+	border-bottom-width: 15px;
 }
 
 #title {
@@ -26,9 +40,24 @@ hr {
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
-    background-color: white;
+    background-color: black;
     border-width: 1px;
     margin-bottom: 45px;
+}
+
+.scrollable {
+    height: 550px;
+    overflow-y: auto;
+}
+
+table {
+	width: 100%;
+	height: 7em;
+}
+
+#td_date_status {
+	text-align: center;
+	color: white;
 }
 
 .button {
@@ -43,6 +72,21 @@ hr {
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.button_item {
+	padding: 10px;
+    width: 150px;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px 0 1em;
+    cursor: pointer;
+	white-space: nowrap;
 }
 
 .buttonCell {
@@ -64,11 +108,21 @@ hr {
     margin-bottom: 30px;
     border: solid thin;
     border-radius: 8px;
-    background-color: rgb(191, 128, 64);
+    background-color: rgb(176,176,176);
 	padding-left: 2em;
 }
 
-.eventTitle{
+.eventTitle {
+	color: white;
     font-size: 3em;
 	text-align: left;
+}
+
+.item_title {
+	font-size: 18px;
+	text-align: center-left;
+}
+
+.item_name {
+	
 }
