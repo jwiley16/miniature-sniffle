@@ -68,10 +68,13 @@ button:hover {
 		cursor: pointer;
 	}
 input {
-		width: 100%;
+		width: 40%;
 		height: 30px;
 		font-size: 20px;
 	}
+#input100 {
+		width: 100%;
+}
 #formdiv {
 		color: rgb(135,0,25);
 		background-color: white; 
@@ -80,14 +83,29 @@ input {
 		width: 40%; 
 		margin: auto;
 }
+#input1 {
+		width: 77%;
+		 padding-top: 15px; 
+		 float: left; 
+		 line-height: 10px;
+	}
+#input2 {
+		width:72%;
+		padding-top: 15px; 
+		float: left;
+	}
+#input3 {
+		width: 88%;
+		padding-top: 15px; 
+		float: left;
+	}
 	
 @media only screen and (max-device-width: 480px) {
 	body {
 		font-family: Helvetica, Sans-Serif;
 		color: white;
-    	width: 85%;
+    	width: 100%;
     	margin: auto;
-    	padding-top: 20px;
 		text-align: center;
 		background-color: rgb(135,0,25);
 		font-size: 20px;
@@ -98,7 +116,7 @@ input {
 		font-weight: lighter;
 		font-size: 65px;
 		margin: auto;
-		padding-bottom: 25px;
+		padding-bottom: 45px;
 	}
 #eventName	{
 		font-size: 40px;
@@ -152,16 +170,18 @@ button:hover {
 		cursor: pointer;
 	}
 input {
-		width: 100%;
+		width: 80%;
 		height: 30px;
 		font-size: 20px;
 	}
+#mobileIn {
+		width: 100%;
+}
 #formdiv {
 		color: rgb(135,0,25);
 		background-color: white; 
-		padding: 20px; 
-		padding-bottom: 1px; 
-		width: 80%; 
+		padding: 15px; 
+		width: 85%; 
 		margin: auto;
 	}
 }

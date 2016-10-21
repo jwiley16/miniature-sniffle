@@ -1,5 +1,5 @@
 <?php
-include( 'Home.html' );
+include( 'index.html' );
 $isempty = false;
 
 $conn = new mysqli("localhost", "root", "NCAPSSQLison#1", "mydb");
@@ -40,6 +40,8 @@ else {
 	if (!mysqli_num_rows($conn->query($sql)) == 0) {
 		echo "Logged in successfully.<br>";
 		header("Location: Admin.html");
+	} else {
+		header("Location: Event.php");
 	}
 }
 //Display

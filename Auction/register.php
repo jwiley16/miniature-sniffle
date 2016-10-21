@@ -1,5 +1,5 @@
 <?php
-include( 'Home.html' );
+include( 'index.html' );
 $isempty = false;
 
 $conn = new mysqli("localhost", "root", "NCAPSSQLison#1", "mydb");

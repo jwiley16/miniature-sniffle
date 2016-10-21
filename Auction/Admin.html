@@ -10,21 +10,40 @@
 		</p>
 			<div id="formdiv">
 			<form action="admin.php" method="post" id="admin" enctype="multipart/form-data">
-				<input type="text" name="name" placeholder="Event Name">
-					<div style="float: left; width 30%; line-height: 10px;"><p>Start time</p></div><div style="float: left; width: 70%; padding-top: 10px;"><input type="time" name="timeStart"></div>
+				<input type="text" name="name" placeholder="Event Name" id="input100">
+				<div style="float: left; width: 23%; height: 20px; text-align: left;">
+					<p>Start&nbsp;time</p>
+				</div>
+				<div id="input1">
+					<input type="time" name="timeStart" id="input100">
+				</div>
 				<br>
-				<p>Ending time</p><input type="time" name="timeEnd">
+				<div style="float: left; width: 28%; height: 20px; text-align: left;">
+					<p>Ending&nbsp;time</p>
+				</div>
+				<div id="input2">
+					<input type="time" name="timeEnd" id="input100">
+				</div>
+				<div style="float: left; width: 12%; height: 20px; text-align: left; padding-bottom: 40px;">
+					<p>Date</p>
+				</div>
+				<div id="input3">
+					<input type="date" name="date" placeholder="Date" id="input100">
+				</div>
 				<br>
-				<p>Date</p><input type="date" name="date" placeholder="Date">
-				<br>
-				<input type="number" name="fee" placeholder="Fee">
-				<br>
-				<input type="text" name="location" placeholder="Location">
+				<input type="number" name="fee" placeholder="Fee" id="input100">
+				<div style="padding-bottom: 15px;"></div>
+				<input type="text" name="location" placeholder="Location" id="input100">
+				<div style="padding-bottom: 15px;"></div>
 				<button class="button2">Submit</button>
-				
 				<!--<input type="file" accept="image/*" name="picture" style="margin: auto;">-->
 			</div>
 			</form>
 		</div>
+		<script type="text/javascript">
+			if (screen.width <= 699) {
+				document.location = "AdminM.html";
+			}
+		</script>
     </body>
 </html>
