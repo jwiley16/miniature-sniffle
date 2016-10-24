@@ -32,6 +32,16 @@ body {
 		background-color: white;
 		color: rgb(135,0,25);
 }
+#item {
+		background-color: white;
+		color: rgb(135,0,25);
+		height: 100px; 
+		width: 80%; 
+		margin: auto; 
+		padding: 20px; 
+		border-bottom: 1px solid grey; 
+		font-size: 30px; 
+		line-height: 15px;
 button {
 		opacity: 1;
     	-webkit-transition: .5s;

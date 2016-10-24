@@ -9,7 +9,7 @@
 			Admin Page
 		</p>
 			<div id="formdiv">
-			<form action="admin.php" method="post" id="admin" enctype="multipart/form-data">
+			<form action="createEvent.php" method="post" id="admin" enctype="multipart/form-data">
 				<input type="text" name="name" placeholder="Event Name" id="mobileIn">
 					<p style="line-height: 0px;">Start&nbsp;time</p>
 					<input type="time" name="timeStart" id="mobileIn">
@@ -25,6 +25,7 @@
 				<div style="padding-bottom: 15px;"></div>
 				<button class="button2">Submit</button>
 				<!--<input type="file" accept="image/*" name="picture" style="margin: auto;">-->
+				<?php include ('display.php'); ?>
 			</div>
 			</form>
 		</div>
