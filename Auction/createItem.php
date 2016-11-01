@@ -1,5 +1,5 @@
 <?php
-include( 'Admin.php' );
+
 $isempty = false;
 
 $conn = new mysqli("localhost", "root", "NCAPSSQLison#1", "mydb");
@@ -9,12 +9,14 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$send = mysqli_query($conn, "SELECT * FROM EventList");
+$image = addslashes(file_get_contents($_FILES['picture']['tmp_name']));
+
+$send = mysqli_query($conn, "SELECT * FROM ItemList");
 $num_rows = mysqli_num_rows($send);
 $id = $num_rows;
 
-$sql = "INSERT INTO EventList (id, name, date, fee, location, timeStart, timeEnd)
-VALUES ('$id','$_POST[name]','$_POST[date]','$_POST[fee]','$_POST[location]','$_POST[timeStart]','$_POST[timeEnd]')";
+$sql = "INSERT INTO ItemList (id, event, name, bid, description, pic)
+VALUES ('$id','$_POST[eventNum]','$_POST[name]','$_POST[bid]','$_POST[description]','$image')";
 
 
 if ($conn->query($sql) === TRUE) {
