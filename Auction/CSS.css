@@ -42,31 +42,8 @@ body {
 		border-bottom: 1px solid grey; 
 		font-size: 30px; 
 		line-height: 15px;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 	}
 button {
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-}
-.button {
-=======
-		}
-button {
->>>>>>> Stashed changes
-=======
-=======
-	}
->>>>>>> Stashed changes
-button {
->>>>>>> parent of 27d9d8b... bleh
->>>>>>> origin/SQLTEST
-=======
-	}
-button {
->>>>>>> parent of f787633... Merge remote-tracking branch 'origin/SQLTEST' into SQLTEST
 		opacity: 1;
     	-webkit-transition: .5s;
        	-moz-transition: .5s;
