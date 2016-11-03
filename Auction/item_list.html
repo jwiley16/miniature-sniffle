@@ -1,13 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="site.css">
-	<META HTTP-EQUIV="refresh" CONTENT="10">	<!-- automatic refresh-->
-	<A HREF="javascript:history.go(0)">Click to refresh the page</A>	<!--refresh button -> item list & single item description-->
+	<!--<META HTTP-EQUIV="refresh" CONTENT="10">	 automatic refresh-->
 </head>
 <body background="black">
-    <div class="the_border">
+    
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand">Silent Auction</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Item List</a></li>
+				<li class="active"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="the_border">
         <p id="title">
             Item List
         </p>
@@ -72,5 +91,6 @@
 		
 		</div>          <!-- end div for "scrollable" -->
 	</div>			<!-- end div for "the_border" -->
+	<A HREF="javascript:history.go(0)">Click to refresh the page</A>	<!--refresh button -> item list & single item description-->
 </body>
 </html>
