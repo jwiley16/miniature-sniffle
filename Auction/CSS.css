@@ -1,0 +1,198 @@
+body {
+		font-family: Helvetica, Sans-Serif;
+		color: white;
+    	width: 75%;
+    	margin: auto;
+		text-align: center;
+		background-color: rgb(135,0,25);
+		background-size: 100% 100%;
+		font-size: 20px;
+}
+#title	{
+		color: white;
+		font-weight: lighter;
+		font-size: 80px;
+		margin: auto;
+		padding-bottom: 25px;
+		padding-top: 60px;
+	}
+#eventName	{
+		font-size: 40px;
+		float: left;
+		padding: 20px;
+		vertical-align: middle;
+	}
+#eventElse	{
+		font-size: 20px;
+		float: left;
+		padding: 20px;
+		vertical-align: middle;
+	}
+#form {
+		background-color: white;
+		color: rgb(135,0,25);
+}
+#item {
+		background-color: white;
+		color: rgb(135,0,25);
+		height: 100px; 
+		width: 80%; 
+		margin: auto; 
+		padding: 20px; 
+		border-bottom: 1px solid grey; 
+		font-size: 30px; 
+		line-height: 15px;
+	}
+button {
+		opacity: 1;
+    	-webkit-transition: .5s;
+       	-moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+        transition: .5s;
+	}
+button:hover {
+		opacity: .75;
+	}
+.button {
+		padding: 10px;
+		width: 100px;
+		background-color: white;
+		border-radius: 4px;
+		border: none;
+		color: rgb(135,0,25);
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+.button2 {
+		padding: 10px;
+		width: 100%;
+		background-color: rgb(135,0,25);
+		border: none;
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		cursor: pointer;
+	}
+input {
+		width: 40%;
+		height: 30px;
+		font-size: 20px;
+	}
+#input100 {
+		width: 100%;
+}
+#formdiv {
+		color: rgb(135,0,25);
+		background-color: white; 
+		padding: 20px; 
+		padding-bottom: 1px; 
+		width: 40%; 
+		margin: auto;
+}
+#input1 {
+		width: 77%;
+		 padding-top: 15px; 
+		 float: left; 
+		 line-height: 10px;
+	}
+#input2 {
+		width:72%;
+		padding-top: 15px; 
+		float: left;
+	}
+#input3 {
+		width: 88%;
+		padding-top: 15px; 
+		float: left;
+	}
+	
+@media only screen and (max-device-width: 480px) {
+	body {
+		font-family: Helvetica, Sans-Serif;
+		color: white;
+    	width: 100%;
+    	margin: auto;
+		text-align: center;
+		background-color: rgb(135,0,25);
+		font-size: 20px;
+		font-weight: 
+	}
+	#title	{
+		color: white;
+		font-weight: lighter;
+		font-size: 65px;
+		margin: auto;
+		padding-bottom: 45px;
+	}
+#eventName	{
+		font-size: 40px;
+		float: left;
+		padding: 20px;
+		vertical-align: middle;
+	}
+#eventElse	{
+		font-size: 20px;
+		float: left;
+		padding: 20px;
+		vertical-align: middle;
+	}
+#form {
+		background-color: white;
+		color: rgb(135,0,25);
+}
+button {
+		opacity: 1;
+    	-webkit-transition: .5s;
+       	-moz-transition: .5s;
+        -ms-transition: .5s;
+         -o-transition: .5s;
+        transition: .5s;
+	}
+button:hover {
+		opacity: .75;
+	}
+.button {
+		padding: 10px;
+		width: 100px;
+		background-color: white;
+		border-radius: 4px;
+		border: none;
+		color: rgb(135,0,25);
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+.button2 {
+		padding: 10px;
+		width: 100%;
+		background-color: rgb(135,0,25);
+		border: none;
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		cursor: pointer;
+	}
+input {
+		width: 80%;
+		height: 30px;
+		font-size: 20px;
+	}
+#mobileIn {
+		width: 100%;
+}
+#formdiv {
+		color: rgb(135,0,25);
+		background-color: white; 
+		padding: 15px; 
+		width: 85%; 
+		margin: auto;
+	}
+}
