@@ -42,8 +42,13 @@ body {
 		border-bottom: 1px solid grey; 
 		font-size: 30px; 
 		line-height: 15px;
+<<<<<<< Updated upstream
 }
 .button {
+=======
+		}
+button {
+>>>>>>> Stashed changes
 		opacity: 1;
     	-webkit-transition: .5s;
        	-moz-transition: .5s;
