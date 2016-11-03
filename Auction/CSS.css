@@ -42,6 +42,7 @@ body {
 		border-bottom: 1px solid grey; 
 		font-size: 30px; 
 		line-height: 15px;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 }
 .button {
@@ -49,6 +50,9 @@ body {
 		}
 button {
 >>>>>>> Stashed changes
+=======
+button {
+>>>>>>> parent of 27d9d8b... bleh
 		opacity: 1;
     	-webkit-transition: .5s;
        	-moz-transition: .5s;
