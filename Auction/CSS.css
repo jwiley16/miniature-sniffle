@@ -42,8 +42,22 @@ body {
 		border-bottom: 1px solid grey; 
 		font-size: 30px; 
 		line-height: 15px;
+<<<<<<< HEAD
 	}
 button {
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+}
+.button {
+=======
+		}
+button {
+>>>>>>> Stashed changes
+=======
+button {
+>>>>>>> parent of 27d9d8b... bleh
+>>>>>>> origin/SQLTEST
 		opacity: 1;
     	-webkit-transition: .5s;
        	-moz-transition: .5s;
