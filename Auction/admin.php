@@ -40,10 +40,10 @@
 			</div>
 			</form>
 		</div>
-		<?php include ('eventList.php'); ?>
+		<?php include ('display.php'); ?>
 		<script type="text/javascript">
 			if (screen.width <= 699) {
-				document.location = "AdminM.php";
+				document.location = "AdminM.html";
 			}
 		</script>
     </body>

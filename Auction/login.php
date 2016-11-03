@@ -1,5 +1,6 @@
 <?php
 include( 'index.html' );
+$isempty = false;
 
 $conn = new mysqli("localhost", "root", "NCAPSSQLison#1", "mydb");
 
@@ -7,7 +8,6 @@ $conn = new mysqli("localhost", "root", "NCAPSSQLison#1", "mydb");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 /*
 $send = mysqli_query($conn, "SELECT * FROM Image");
 $num_rows = mysqli_num_rows($send);
@@ -34,12 +34,12 @@ if (mysqli_num_rows($conn->query($sql)) == 0) {
 }
 else {
 	echo "Logged in successfully.<br>";
-	
+	//header("Location: Event.php");
 	$sql = "SELECT * FROM userList WHERE email = '$_POST[User]' AND admin =1";
 
 	if (!mysqli_num_rows($conn->query($sql)) == 0) {
 		echo "Logged in successfully.<br>";
-		header("Location: Admin.php");
+		header("Location: Admin.html");
 	} else {
 		header("Location: Event.php");
 	}

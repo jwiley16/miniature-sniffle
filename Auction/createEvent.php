@@ -1,5 +1,5 @@
 <?php
-include( 'Admin.php' );
+include( 'Admin.html' );
 $isempty = false;
 
 $conn = new mysqli("localhost", "root", "NCAPSSQLison#1", "mydb");
@@ -22,6 +22,29 @@ if ($conn->query($sql) === TRUE) {
 } else {
 	echo "Error Sending Request";
     //echo "Error: " . $sql . "<br>" . $conn->error . "<br>";
+}
+
+$sql = "SELECT name, date, fee, location, timeStart, timeEnd FROM EventList";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo 	"<div style=\"width: 33%; float: left;\">
+        		<p style=\"font-size: 40px; line-height: 10px;\">"
+        		. $row["name"] . 
+        		"</p></div><div style=\"width: 33%; float: left;\"><p>"
+        		. $row["location"] .
+        		"<br>"
+        		. $row["date"] .
+        		"</p></div><div style=\"width: 33%; float: left;\"><p>"
+        		. $row["fee"] .
+        		"<br>"
+        		. $row["timeStart"] . " to " . $row["timeEnd"] .
+        		"</p></div><br><br><br><br>";
+    }
+} else {
+    echo "0 results";
 }
 
 $conn->close();

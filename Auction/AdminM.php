@@ -25,7 +25,7 @@
 				<div style="padding-bottom: 15px;"></div>
 				<button class="button2">Submit</button>
 				<!--<input type="file" accept="image/*" name="picture" style="margin: auto;">-->
-				<?php include ('eventList.php'); ?>
+				<?php include ('display.php'); ?>
 			</div>
 			</form>
 		</div>

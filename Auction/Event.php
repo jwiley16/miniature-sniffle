@@ -6,6 +6,6 @@
 	<p id="Title" style="padding-top: 0px;">
         Event Sign In
     </p>
-    <?php include 'eventList.php'; ?>
+    <?php include 'display.php'; ?>
 </body>
 </html>
