@@ -6,11 +6,11 @@
 	<p id="Title" style="padding-top: 0px;">
         Event Sign In
     </p>
-    <?php include 'eventList.php'; ?>
+    <?php include 'eventListM.php'; ?>
     <script type="text/javascript">
 			if (screen.width <= 699) {
-				document.location = "EventM.php";
+				<?php include 'eventListM.php'; ?>
 			}
-	</script>
+		</script>
 </body>
 </html>

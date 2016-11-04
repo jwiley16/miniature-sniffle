@@ -5,15 +5,19 @@
 	</head>
     <body>
     	<div style="padding-bottom: 50px;">
-    	<p id="Title">
-			Silent Auction <br> Web App
-		</p>
-			<a href="Login.html"><button class="button">Login</button></a>
-			<a href="Register.html">
-				<button class="button">
-					Register
-				</button>
-			</a>
+    		<p id="Title">
+				Silent Auction
+			</p>
+			<form id="formdiv" action="login.php" method="post" id="Login" enctype="multipart/form-data">
+				<img src="nkc.jpg"/>
+				<input id="input100" type="text" name="User" placeholder="Username">
+				<div style="padding-top: 10px;"></div>
+				<input id="input100" type="password" name="Pass" placeholder="Password">
+				<div style="padding-top: 10px;"></div>
+				<button class="button2">Submit</button>
+				<!--<input type="file" accept="image/*" name="picture" style="margin: auto;">-->
+				<p style="font-size: 15px; color: black;">Not registered?&nbsp;<a href="Register.html">Create an account!</a></p>
+			</form>
 		</div>
     </body>
 </html>

@@ -42,7 +42,7 @@ body {
 		border-bottom: 1px solid grey; 
 		font-size: 30px; 
 		line-height: 15px;
-	}
+}
 button {
 		opacity: 1;
     	-webkit-transition: .5s;
@@ -110,6 +110,13 @@ input {
 		padding-top: 15px; 
 		float: left;
 	}
+a:link {
+    color: rgb(135,0,25);
+}
+
+a:visited {
+    color: rgb(135,0,25);
+}
 	
 @media only screen and (max-device-width: 480px) {
 	body {
@@ -194,5 +201,12 @@ input {
 		padding: 15px; 
 		width: 85%; 
 		margin: auto;
+	}
+a:link {
+    color: rgb(135,0,25);
+	}
+
+a:visited {
+    color: rgb(135,0,25);
 	}
 }
