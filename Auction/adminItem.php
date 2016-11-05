@@ -12,10 +12,10 @@
 			<form action="createItem.php" method="post" id="admin" enctype="multipart/form-data">
 				<input type="hidden" name="eventNum" value="<?php echo $_GET['eventNum'];?>">
 				<input type="text" name="name" placeholder="Item Name" id="input100">
-				<div style="float: left; width: 30%; height: 20px; text-align: left; padding-bottom: 40px;">
+				<div style="float: left; width: 35%; height: 20px; text-align: left; padding-bottom: 40px;">
 					<p>Starting Bid</p>
 				</div>
-				<div style="width:70%; padding-top: 15px; float: right;">
+				<div style="width: 65%; padding-top: 15px; float: right;">
 					<input type="number" name="bid" placeholder="Bid" id="input100">
 				</div>
 				<br>
@@ -24,14 +24,10 @@
 				<input type="file" accept="image/*" name="picture" style="margin: auto;" id="input100">
 				<div style="padding-bottom: 15px;"></div>
 				<button class="button2">Submit</button>
-			</div>
 			</form>
+			</div>
+			<div style="padding-top: 30px;"></div>
 		<?php $eventNum = $_GET['eventNum']; include ('itemList.php');?>
 		</div>
-		<script type="text/javascript">
-			if (screen.width <= 699) {
-				document.location = "AdminM.php";
-			}
-		</script>
     </body>
 </html>

@@ -12,20 +12,29 @@ $sql = "SELECT id, name, date, fee, location, timeStart, timeEnd FROM EventList"
 if ($result->num_rows > 0) {
     // output data of each row
 while($row = $result->fetch_assoc()) {
-    echo 	"<div style=\"width: 100%; height: 125px;\"><div style=\"width: 25%; float: left;\">
-        	<p style=\"font-size: 40px; line-height: 10px;\">"
-        	. $row["name"] . 
-        	"</p></div><div style=\"width: 25%; float: left;\"><p>"
-        	. $row["location"] .
-        	"<br>"
-        	. $row["date"] .
-        	"</p></div><div style=\"width: 25%; float: left;\"><p>"
-        	. $row["fee"] .
-        	"<br>"
-        	. $row["timeStart"] . " to " . $row["timeEnd"] .
-        	"</p></div><div style=\"width: 25%; float: left;\">
-        	<a href=\"adminItem.php?eventNum=". $row["id"] ."\">
-        	<button class=\"button\">More</button></a></div></div>";
+    echo 	"<div id=\"formdivPHP\">
+        		<p style=\"font-size: 40px; line-height: 10px;\">"
+        			. $row["name"] . 
+        		"</p>
+        		<p>"
+        			. $row["location"] .
+        			"<br><br>"
+        			. $row["date"] .
+        		"</p>
+        		<p>"
+        			. $row["fee"] .
+        			"<br>"
+        			. $row["timeStart"] . " to " . $row["timeEnd"] .
+        		"</p>
+        	<a href=\"";
+        	if ($isAdmin == 1) {
+        				echo "adminItem.php";
+        			} else {
+        				echo "Item.php";
+        			}
+    echo 	"?eventNum=". $row["id"] ."\">
+        	<br>
+        	<button class=\"button2\">More</button></a></div>";
     }
 } else {
     echo "0 results";

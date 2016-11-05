@@ -4,21 +4,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
     <body>
-    	<div style="padding-bottom: 50px;">
+    	<div style="height: 100%; padding-bottom: 50px; margin: 0 6% 0 6%">
     	<p id="Title">
 			Admin Page
 		</p>
-			<div id="formdiv">
+			<div id="formdiv" style="float: left; margin: 0% 3% 45px 3%;">
 			<form action="createEvent.php" method="post" id="admin" enctype="multipart/form-data">
 				<input type="text" name="name" placeholder="Event Name" id="input100">
-				<div style="float: left; width: 23%; height: 20px; text-align: left;">
+				<div style="float: left; width: 25%; height: 20px; text-align: left;">
 					<p>Start&nbsp;time</p>
 				</div>
 				<div id="input1">
 					<input type="time" name="timeStart" id="input100">
 				</div>
 				<br>
-				<div style="float: left; width: 28%; height: 20px; text-align: left;">
+				<div style="float: left; width: 30%; height: 20px; text-align: left;">
 					<p>Ending&nbsp;time</p>
 				</div>
 				<div id="input2">
@@ -39,8 +39,11 @@
 				<!--<input type="file" accept="image/*" name="picture" style="margin: auto;">-->
 			</div>
 			</form>
+			<?php 
+    			$isAdmin = 1;
+    			include 'eventList.php'; 
+    		?>
 		</div>
-		<?php include ('eventList.php'); ?>
 		<script type="text/javascript">
 			if (screen.width <= 699) {
 				document.location = "AdminM.php";

@@ -5,11 +5,8 @@
 </head>
 <body>
 	<p id="Title" style="padding-top: 0px;">
-        Events
+        Item List
     </p>
-    <?php 
-    	$isAdmin = 0;
-    	include 'eventList.php'; 
-    ?>
+    <?php $eventNum = $_GET['eventNum']; include ('itemList.php');?>
 </body>
 </html>

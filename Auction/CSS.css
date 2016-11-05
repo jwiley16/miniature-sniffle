@@ -14,7 +14,7 @@ body {
 		font-size: 80px;
 		margin: auto;
 		padding-bottom: 25px;
-		padding-top: 60px;
+		padding-top: 30px;
 	}
 #eventName	{
 		font-size: 40px;
@@ -39,9 +39,8 @@ body {
 		width: 80%; 
 		margin: auto; 
 		padding: 20px; 
-		border-bottom: 1px solid grey; 
+		border-bottom: 1px solid rgb(135,0,25); 
 		font-size: 30px; 
-		line-height: 15px;
 }
 button {
 		opacity: 1;
@@ -78,6 +77,17 @@ button:hover {
 		font-size: 20px;
 		cursor: pointer;
 	}
+.button3 {
+		padding: 10px;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(135,0,25);
+		border: none;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+		cursor: pointer;
+	}
 input {
 		width: 40%;
 		height: 30px;
@@ -89,19 +99,30 @@ input {
 #formdiv {
 		color: rgb(135,0,25);
 		background-color: white; 
-		padding: 20px; 
+		padding: 2%; 
 		padding-bottom: 1px; 
 		width: 40%; 
 		margin: auto;
 }
+#formdivPHP {
+		color: rgb(135,0,25);
+		background-color: white; 
+		padding: 2%; 
+		padding-bottom: 20px; 
+		height: 314px; 
+		margin: auto;
+		width: 40%; 
+		float: left; 
+		margin: 0% 3% 45px 3%; 
+}
 #input1 {
-		width: 77%;
-		 padding-top: 15px; 
-		 float: left; 
-		 line-height: 10px;
+		width: 75%;
+		padding-top: 15px; 
+		float: left; 
+		line-height: 10px;
 	}
 #input2 {
-		width:72%;
+		width:70%;
 		padding-top: 15px; 
 		float: left;
 	}
@@ -152,6 +173,17 @@ a:visited {
 		background-color: white;
 		color: rgb(135,0,25);
 }
+#item {
+		background-color: white;
+		color: rgb(135,0,25);
+		height: 75px; 
+		width: 90%; 
+		margin: auto; 
+		padding: 5px; 
+		border-bottom: 1px solid rgb(135,0,25); 
+		font-size: 30px; 
+		display: inline-flex;
+}
 button {
 		opacity: 1;
     	-webkit-transition: .5s;
@@ -201,6 +233,14 @@ input {
 		padding: 15px; 
 		width: 85%; 
 		margin: auto;
+	}
+#formdivPHP {
+		color: rgb(135,0,25);
+		background-color: white; 
+		padding: 15px; 
+		width: 85%; 
+		margin: auto;
+		margin: 0% 3% 45px 3%; 
 	}
 a:link {
     color: rgb(135,0,25);
