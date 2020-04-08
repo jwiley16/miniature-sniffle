@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<!--<link rel="stylesheet" type="text/css" href="CSS.css">-->
+		<style>
+			body {
+				font-family: Helvetica, Sans-Serif;
+				color: white;
+    			width: 75%;
+    			margin: auto;
+    			padding-top: 70px;
+				text-align: center;
+				background-color: #0066ff;
+				background-size: 100% 100%;
+				font-size: 20px;
+				font-weight: lighter;
+			}
+			#title	{
+				color: white;
+				font-weight: lighter;
+				font-size: 80px;
+				margin: auto;
+				padding-bottom: 25px;
+			}
+			button {
+				opacity: 1;
+    			-webkit-transition: .5s;
+       			-moz-transition: .5s;
+        		-ms-transition: .5s;
+         		-o-transition: .5s;
+            	transition: .5s;
+			}
+			button:hover {
+				opacity: .75;
+			}
+			.button {
+				padding: 10px;
+				width: 100px;
+				background-color: white;
+				border-radius: 4px;
+				border: none;
+				color: black;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 20px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+    <body background="image.jpg">
+    
+    	<div>
+    	<p id="Title">
+			Silent Auction <br> Web App
+		</p>
+			<div>
+				<form action="login.php" method="post" id="Login">
+						Username
+					<input type="text" name="Use">
+					<br>
+						Password&nbsp
+					<input type="text" name="pass">
+					<br>
+				</form>
+				<button class="button" type="submit" form="Login" value="Submit">
+					Login
+				</button>
+				<a href="https://www.google.com/search?site=&source=hp&q=how+to+register&oq=how+to+regi&gs_l=hp.3.0.35i39k1j0i20k1l2j0l7.1241.3453.0.4917.12.12.0.0.0.0.153.1219.7j5.12.0....0...1c.1.64.hp..0.11.1119.0..0i131k1j0i131i46k1j46i131k1.7J1SDbGq-oI">
+					<button class="button">
+						Register
+					</button>
+				</a>
+			</div>
+		</div>
+    </body>
+</html>
